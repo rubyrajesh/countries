@@ -1,0 +1,38 @@
+<h1>Listing countries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Capital</th>
+      <th>Region</th>
+      <th>Sub region</th>
+      <th>Calling code</th>
+      <th>Area</th>
+      <th>Currencies</th>
+      <th>Top level domain</th>
+      <th>Languages</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= country.name %></td>
+        <td><%= country.capital %></td>
+        <td><%= country.region %></td>
+        <td><%= country.sub_region %></td>
+        <td><%= country.calling_code %></td>
+        <td><%= country.area %></td>
+        <td><%= country.currencies %></td>
+        <td><%= country.top_level_domain %></td>
+        <td><%= country.languages %></td>
+        <td><%= link_to 'Show', country_url(country.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

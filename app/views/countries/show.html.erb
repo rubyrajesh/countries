@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @country.name %>
+</p>
+
+<p>
+  <strong>Capital:</strong>
+  <%= @country.capital %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @country.region %>
+</p>
+
+<p>
+  <strong>Sub region:</strong>
+  <%= @country.sub_region %>
+</p>
+
+<p>
+  <strong>Calling code:</strong>
+  <%= @country.calling_code %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @country.area %>
+</p>
+
+<p>
+  <strong>Currencies:</strong>
+  <%= @country.currencies %>
+</p>
+
+<p>
+  <strong>Top level domain:</strong>
+  <%= @country.top_level_domain %>
+</p>
+
+<p>
+  <strong>Languages:</strong>
+  <%= @country.languages %>
+</p>
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
